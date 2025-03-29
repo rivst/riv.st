@@ -74,6 +74,15 @@ ul {
   list-style: square;
 }
 
+section > img {
+  width: 100%;
+}
+
+blockquote {
+  text-align: right;
+  font-style: italic;
+}
+
 .cv-table-spec {
   width: 16ex;
 }
