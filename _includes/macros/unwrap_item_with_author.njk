@@ -1,0 +1,8 @@
+{% macro unwrap_item_with_author(item) %}
+    {% if item.url %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    {% else %}
+        {{ item.title }}
+    {% endif %}
+    {{ " - " + item.by }}
+{% endmacro %}

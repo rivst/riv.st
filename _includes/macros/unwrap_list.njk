@@ -1,0 +1,13 @@
+{% macro unwrap_list(items) %}
+    <ul>
+        {% for item in items %}
+            <li>
+                {% if caller %}
+                    {{ caller(item) }}
+                {% else %}
+                    {{ item }}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}

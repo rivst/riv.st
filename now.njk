@@ -1,0 +1,40 @@
+---
+layout: layouts/root.njk
+subtitle: now
+---
+
+{% from 'macros/unwrap_list.njk' import unwrap_list %}
+{% from 'macros/unwrap_item_with_author.njk' import unwrap_item_with_author %}
+<header>
+  <h1>now</h1>
+</header>
+<hr/>
+<main>
+  <section>
+    <p>
+      Taking a break from learning kanji. Focusing on one last big paper before switching gears and getting the final thesis
+      section done. In the meantime, catching up on side projects and building
+      <a href="https://github.com/nanomarkdown">nanomarkdown</a>. Also looking into HTMX and hypermedia for a little idea that's been brewing.
+    </p>
+    <p>Reading now:</p>
+    {% call(item) unwrap_list(now_reading) %}
+    {{ unwrap_item_with_author(item) }}
+    {% endcall %}
+    {% if now_podcasts | length > 0 %}
+      <p>Podcasts in rotation:</p>
+      {{ unwrap_list(now_podcasts) }}
+    {% endif %}
+    <p>Listening on repeat now:</p>
+    {% call(item) unwrap_list(now_music) %}
+    {{ unwrap_item_with_author(item) }}
+    {% endcall %}
+    <p>
+      <em>Last updated:
+        <time>Jun 14, 2025, 5:59 PM</time>
+      </em>
+    </p>
+    <p>
+      <a href="/now.txt">archive</a>
+    </p>
+  </section>
+</main>

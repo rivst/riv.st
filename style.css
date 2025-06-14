@@ -1,18 +1,18 @@
 @font-face {
   font-family: Aileron;
-  src: url("Aileron-Bold.otf");
+  src: url("assets/fonts/Aileron-Bold.otf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: Aileron;
-  src: url("Aileron-Light.otf");
+  src: url("assets/fonts/Aileron-Light.otf");
   font-weight: 300;
 }
 
 @font-face {
   font-family: Aileron;
-  src: url("Aileron-LightItalic.otf");
+  src: url("assets/fonts/Aileron-LightItalic.otf");
   font-weight: 300;
   font-style: italic;
 }
@@ -85,6 +85,12 @@ blockquote {
 
 .cv-table-spec {
   width: 16ex;
+}
+
+.links > a:not(:last-child)::after {
+  content: " | ";
+  color: #0d0d0d;
+  font-weight: 100;
 }
 
 @media (prefers-color-scheme: dark) {

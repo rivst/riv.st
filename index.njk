@@ -1,0 +1,28 @@
+---
+layout: layouts/root.njk
+---
+
+{% from 'macros/unwrap_links.njk' import unwrap_links %}
+<header>
+    <h1>rivst
+    </h1>
+    <nav class="links">
+        {{ unwrap_links(nav_links) }}
+    </nav>
+</header>
+<hr/>
+<main>
+    <section>
+        <p>I'm Alex, a.k.a.
+            <em>rivst</em>. I research how transformations happen in higher education systems and how technology can help humans
+                learn better. This site documents my research, ongoing projects, and ideas.</p>
+        <p>
+            The best way to contact me is via email
+            <em>&lt;rivst at disroot dot org&gt;</em>.
+        </p>
+        <p class="links">
+            {{ unwrap_links(social_links) }}
+        </p>
+        <blockquote>Ex umbra in solem.</blockquote>
+    </section>
+</main>
