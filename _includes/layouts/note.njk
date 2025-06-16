@@ -16,7 +16,7 @@ layout: layouts/root.njk
     </div>
     <div class="post-tags">
         <strong>Tags:</strong>
-        {{ unwrap_list(tags) }}
+        {{ unwrap_list(tags | exclude("note")) }}
     </div>
 </header>
 <hr/>
