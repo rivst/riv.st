@@ -12,6 +12,10 @@
     "href": "/projects"
   },
   {
+    "anchor": "music",
+    "href": "/music"
+  },
+  {
     "anchor": "curriculum vitæ",
     "href": "/cv"
   }
