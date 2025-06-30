@@ -10,5 +10,6 @@ export default function () {
         return stats.mtime;
       },
     },
+    date: "git Created",
   };
 }
