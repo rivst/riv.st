@@ -3,6 +3,7 @@ title: Fibonacci prioritization
 tags:
   - life
   - productivity
+date: 2025-06-16
 ---
 
 The idea of Fibonacci prioritization is to have several "buckets", each with a "capacity" corresponding to the number in the Fibonacci sequence. The priority of tasks in the bucket decreases with each next level.

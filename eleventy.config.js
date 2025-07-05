@@ -5,7 +5,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("post_date", (dateObj) => {
     return `${dateObj.toLocaleString("default", {
       dateStyle: "medium",
-      timeStyle: "short",
     })}`;
   });
   eleventyConfig.addFilter("exclude", (collection, stringToFilter) => {

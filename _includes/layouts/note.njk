@@ -9,10 +9,12 @@ layout: layouts/root.njk
         <p>Created:
             <time>{{ page.date | post_date }}</time>
         </p>
-        <p>
-            Modified:
-            <time>{{ lastModified | post_date }}</time>
-        </p>
+        {% if page.updated %}
+            <p>
+                Updated:
+                <time>{{ page.updated | post_date }}</time>
+            </p>
+        {% endif %}
     </div>
     <div class="post-tags">
         <strong>Tags:</strong>

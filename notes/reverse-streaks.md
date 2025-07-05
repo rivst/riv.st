@@ -3,6 +3,7 @@ title: Reverse streaks
 tags:
   - life
   - productivity
+date: 2025-06-26
 ---
 
 The principle of what I call "reverse streaks" is the same as abstinence streaks, but flipped to make them work for habits.
