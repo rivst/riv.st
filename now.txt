@@ -1,5 +1,14 @@
 == Archive of "nows" ==
 
+== Jul 7, 2025, 6:06 PM
+
+More paper writing. Building a new Arch Linux install with XFCE + i3. Making progress on side projects (or at least trying to). Cutting down on screen time and stimulations
+
+Reading now:
+
+Tao Te Ching - Lao Tzu, translated by Jonathan Star
+Natsume's Book of Friends (vol 29) - Yuki Midorikawa
+
 == Jun 14, 2025, 5:59 PM
 
 Taking a break from learning kanji. Focusing on one last big paper before switching gears and getting the final thesis section done. In the meantime, catching up on side projects and building nanomarkdown. Also looking into HTMX and hypermedia for a little idea that's been brewing.

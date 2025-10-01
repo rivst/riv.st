@@ -12,8 +12,7 @@ subtitle: now
 <main>
   <section>
     <p>
-      More paper writing. Building a new Arch Linux install with XFCE + i3. Making progress on side projects (or at least
-      trying to). Cutting down on screen time and stimulations
+      Finishing the thesis draft, making progress on a side project in the meantime.
     </p>
     <p>Reading now:</p>
     {% call(item) unwrap_list(now_reading) %}
@@ -23,15 +22,19 @@ subtitle: now
       <p>Podcasts in rotation:</p>
       {{ unwrap_list(now_podcasts) }}
     {% endif %}
+    {% if now_watching | length > 0 %}
+      <p>Watching:</p>
+      {{ unwrap_list(now_watching) }}
+    {% endif %}
     {% if now_music | length > 0 %}
-      <p>Listening on repeat now:</p>
+      <p>Listening on repeat:</p>
       {% call(item) unwrap_list(now_music) %}
       {{ unwrap_item_with_author(item) }}
       {% endcall %}
     {% endif %}
     <p>
       <em>Last updated:
-        <time>Jul 7, 2025, 6:06 PM</time>
+        <time>Oct 1, 2025, 5:36 PM</time>
       </em>
     </p>
     <p>
