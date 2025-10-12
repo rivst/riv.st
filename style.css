@@ -17,6 +17,19 @@
   font-style: italic;
 }
 
+:root {
+  --capriccio-primary: hsl(350, 73%, 29%);
+  --capriccio-primary-light: hsl(350, 73%, 45%);
+  --capriccio-primary-dark: hsl(350, 73%, 20%);
+
+  --capriccio-gray-50: hsl(25, 20%, 97%);
+  --capriccio-gray-100: hsl(25, 15%, 92%);
+  --capriccio-gray-200: hsl(25, 12%, 85%);
+  --capriccio-gray-600: hsl(25, 8%, 45%);
+  --capriccio-gray-800: hsl(25, 10%, 25%);
+  --capriccio-gray-900: hsl(25, 15%, 15%);
+}
+
 *,
 *:before,
 *:after {
@@ -31,24 +44,42 @@ body {
   margin: 0 auto;
   max-width: 600px;
   width: 90%;
-  color: #333333;
+  color: var(--capriccio-gray-900);
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #7d9b76;
+  color: var(--capriccio-primary);
 }
 
 a:hover {
-  color: #5e775a;
+  color: var(--capriccio-primary-dark);
+}
+
+a[href^="http://"]::after,
+a[href^="https://"]::after
+{
+  content: "";
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  margin-left: 0.25em;
+  background-image: url("/assets/images/external.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+a.no-external-icon::after {
+  display: none;
 }
 
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #d2dcd0;
+  border-top: 1px solid var(--capriccio-gray-200);
   margin: 1em 0;
   padding: 0;
 }
@@ -108,10 +139,40 @@ blockquote {
   gap: 0.25rem;
 }
 
-.links > a:not(:last-child)::after {
+.links:not(.no-pipe) > a:not(:last-child)::after {
   content: " | ";
-  color: #0d0d0d;
+  color: var(--capriccio-gray-900);
   font-weight: 100;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 16px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button.default {
+  background: var(--capriccio-gray-50);
+  border-color: var(--capriccio-gray-200);
+  color: var(--capriccio-gray-800);
+  box-shadow: 0 1px 0 rgba(31, 35, 40, 0.04);
+}
+
+.button.default:hover {
+  background: #f3f4f6;
+  border-color: var(--capriccio-gray-200);
+  box-shadow: 0 1px 0 rgba(31, 35, 40, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
