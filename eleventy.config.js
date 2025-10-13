@@ -14,4 +14,8 @@ export default function (eleventyConfig) {
     }
     return (collection ?? []).filter((item) => item !== stringToFilter);
   });
+  eleventyConfig.addFilter("resolvePaper", function (filename) {
+    const bibCache = this.ctx.bibCache || {};
+    return bibCache[filename] || null;
+  });
 }

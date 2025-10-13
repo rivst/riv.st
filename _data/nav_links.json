@@ -1,7 +1,15 @@
 [
   {
+    "anchor": "contact",
+    "href": "/contact"
+  },
+  {
     "anchor": "notes",
     "href": "/notes"
+  },
+  {
+    "anchor": "lit. stash",
+    "href": "/lit"
   },
   {
     "anchor": "now",

@@ -1,0 +1,39 @@
+---
+layout: layouts/root.njk
+subtitle: lit. stash
+---
+
+{% from 'macros/unwrap_list.njk' import unwrap_list %}
+{% from 'macros/unwrap_bib_apa.njk' import unwrap_bib_apa %}
+<header>
+    <h1>lit. stash</h1>
+</header>
+<hr/>
+<p>
+    This is where I keep an archive of important, interesting, or thought-provoking things I've read.
+</p>
+<h2>2025</h2>
+<div>
+    {% for month, entries in litstash.y2025 %}
+        <div>
+            <h3>{{ month | capitalize }}</h3>
+            {% for category, items in entries %}
+                {% if items.length > 0 %}
+                    <h4>{{ category | capitalize }}</h4>
+                    {% call(item) unwrap_list(items) %}
+                    {% if item.endsWith('.bib') %}
+                        {% set paper = item | resolvePaper %}
+                        {% if paper %}
+                            {{ unwrap_bib_apa(paper) }}
+                        {% else %}
+                            {{ item }} (not found)
+                        {% endif %}
+                    {% else %}
+                        {{ item }}
+                    {% endif %}
+                    {% endcall %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>

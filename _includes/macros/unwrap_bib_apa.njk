@@ -1,0 +1,15 @@
+{% macro unwrap_bib_apa(entry) %}
+    {%- if entry.authorFormatted -%}
+        {{ entry.authorFormatted }}
+    {%- endif -%}
+    {%- if entry.year %} ({{ entry.year }}).{%- endif -%}
+    {%- if entry.title %} {{ entry.title }}{%- if not entry.title.endsWith('.') %}.{%- endif -%}{%- endif -%}
+    {%- if entry.journal and entry.type == 'article' %} <em>{{ entry.journal }}</em>{%- if entry.volume -%}, {{ entry.volume }}{%- endif -%}{%- if entry.number -%}({{ entry.number }}){%- endif -%}{%- if entry.pages -%}, {{ entry.pages }}{%- endif -%}.{%- endif -%}
+    {%- if entry.doi %}
+        {%- set cleanDoi = entry.doi | replace('https://doi.org/', '') | replace('http://doi.org/', '') %}
+        {%- if cleanDoi.startsWith('10.') %} <a href="https://doi.org/{{ cleanDoi }}">https://doi.org/{{ cleanDoi }}</a>
+        {%- else %} <a href="{{ entry.doi }}">{{ entry.doi }}</a>
+        {%- endif -%}
+    {%- elif entry.url %} <a href="{{ entry.url }}">{{ entry.url }}</a>
+    {%- endif -%}
+{% endmacro %}
