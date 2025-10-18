@@ -1,7 +1,8 @@
 {
     "october": {
         "books": ["The Expanded Dialectical Behavior Therapy Skills Training Manual - Lane Pederson, Cortney Pederson"],
-        "manga": ["Natsume's Book of Friends (vol 31) - Yuki Midorikawa"]
+        "manga": ["Natsume's Book of Friends (vol 31) - Yuki Midorikawa"],
+        "papers": ["citation-392440323.bib", "10.14742-ajet.4887.bib"]
     },
     "september": {
         "manga": ["Natsume's Book of Friends (vol 30) - Yuki Midorikawa"],
