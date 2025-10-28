@@ -85,13 +85,14 @@ export default function () {
       if (parsed && parsed.length > 0) {
         const entry = parsed[0];
 
-        const authorRaw = entry.entryTags?.AUTHOR || entry.entryTags?.author || "";
+        const authorRaw =
+          entry.entryTags?.AUTHOR || entry.entryTags?.author || "";
 
         const normalizedEntry = {
           type: entry.entryType || "article",
           key: entry.citationKey || "",
           authorFormatted: formatAuthorsAPA(authorRaw),
-          authorRaw: authorRaw,
+          authorRaw,
           title: entry.entryTags?.TITLE || entry.entryTags?.title || "",
           year: entry.entryTags?.YEAR || entry.entryTags?.year || "",
           journal: entry.entryTags?.JOURNAL || entry.entryTags?.journal || "",

@@ -1,20 +1,30 @@
 {
-    "october": {
-        "books": ["The Expanded Dialectical Behavior Therapy Skills Training Manual - Lane Pederson, Cortney Pederson"],
-        "manga": ["Natsume's Book of Friends (vol 31) - Yuki Midorikawa"],
-        "papers": ["citation-392440323.bib", "10.14742-ajet.4887.bib"]
-    },
-    "september": {
-        "manga": ["Natsume's Book of Friends (vol 30) - Yuki Midorikawa"],
-        "papers": ["Williams2007.bib", "S0010945223000710.bib", "pmc_5845117.bib", "citations-20251013T153037.bib"]
-    },
-    "august": {
-        "manga": ["Natsume's Book of Friends (vol 29) - Yuki Midorikawa"]
-    },
-    "july": {
-        "books": ["Tao Te Ching - Lao Tzu, translated by Jonathan Star"]
-    },
-    "june": {
-        "books": ["Hypermedia Systems - Carson Gross, Adam Stepinski, Deniz Akşimşek"]
-    }
+  "october": {
+    "books": [
+      "The Expanded Dialectical Behavior Therapy Skills Training Manual - Lane Pederson, Cortney Pederson"
+    ],
+    "manga": ["Natsume's Book of Friends (vol 31) - Yuki Midorikawa"],
+    "papers": ["citation-392440323.bib", "10.14742-ajet.4887.bib"],
+    "misc": ["nedelcu2025.bib"]
+  },
+  "september": {
+    "manga": ["Natsume's Book of Friends (vol 30) - Yuki Midorikawa"],
+    "papers": [
+      "Williams2007.bib",
+      "S0010945223000710.bib",
+      "pmc_5845117.bib",
+      "citations-20251013T153037.bib"
+    ]
+  },
+  "august": {
+    "manga": ["Natsume's Book of Friends (vol 29) - Yuki Midorikawa"]
+  },
+  "july": {
+    "books": ["Tao Te Ching - Lao Tzu, translated by Jonathan Star"]
+  },
+  "june": {
+    "books": [
+      "Hypermedia Systems - Carson Gross, Adam Stepinski, Deniz Akşimşek"
+    ]
+  }
 }
