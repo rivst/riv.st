@@ -10,8 +10,14 @@ layout: layouts/root.njk
 <hr/>
 <main>
     <section>
+        These are some thoughts and ideas I've had over the time. Select ones, in a
+        <a href="https://indieweb.org/POSSE">POSSE</a>
+        fashion, are cross-posted to
+        <a href="https://rivstt.substack.com/">Riv's Field Notes</a>.
+    </section>
+    <section>
         <ul>
-            {% for note in collections.note %}
+            {% for note in collections.note | reverse %}
                 <li>
                     <a href="{{ note.url }}">{{ note.data.title }}</a>
                     - {{ note.date | post_date }}</li>
