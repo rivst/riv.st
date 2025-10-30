@@ -177,15 +177,23 @@ blockquote {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #f0f0f0;
+    color: var(--capriccio-gray-50);
     background-color: #0d0d0d;
   }
 
   a {
-    color: #a0c8e2;
+    color: var(--capriccio-primary);
+  }
+
+  a:hover {
+    color: var(--capriccio-primary-light);
   }
 
   hr {
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid var(--capriccio-gray-200);
+  }
+
+  .links:not(.no-pipe) > a:not(:last-child)::after {
+    color: var(--capriccio-gray-50);
   }
 }
