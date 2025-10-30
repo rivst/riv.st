@@ -4,7 +4,6 @@ subtitle: lit. stash
 ---
 
 {% from 'macros/unwrap_list.njk' import unwrap_list %}
-{% from 'macros/unwrap_bib_apa.njk' import unwrap_bib_apa %}
 <header>
     <h1>lit. stash</h1>
 </header>
@@ -24,7 +23,7 @@ subtitle: lit. stash
                     {% if item.endsWith('.bib') %}
                         {% set paper = item | resolvePaper %}
                         {% if paper %}
-                            {{ unwrap_bib_apa(paper) }}
+                            {{ paper | safe }}
                         {% else %}
                             {{ item }} (not found)
                         {% endif %}

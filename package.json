@@ -13,6 +13,8 @@
   "license": "AGPL-3.0-or-later",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "bibtex-parse-js": "^0.0.23"
+    "@citation-js/core": "^0.7.21",
+    "@citation-js/plugin-bibtex": "^0.7.21",
+    "@citation-js/plugin-csl": "^0.7.21"
   }
 }
